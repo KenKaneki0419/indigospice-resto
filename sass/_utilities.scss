@@ -1,0 +1,30 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-l {
+    max-width: 1300px;
+    margin: auto;
+}
+
+@mixin logo {
+    display: flex;
+    width: 210px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 200px;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+    
+}
+
+.section-title {
+    font: normal bold 35px/45px 'PT Sans', sans-serif;
+}

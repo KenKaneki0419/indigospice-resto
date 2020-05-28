@@ -1,0 +1,624 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-l {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section-title {
+  font: normal bold 35px/45px 'PT Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 3fr;
+      grid-template-rows: 2fr 3fr;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/bg-img.png") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/bg-img.png") no-repeat center center/cover;
+  height: 99vh;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+header .main-nav .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 7fr;
+      grid-template-columns: 2fr 7fr;
+}
+
+header .main-nav .container div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .main-nav .container div .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1E2019;
+  background-color: #EDFF86;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  justify-self: center;
+  padding-bottom: unset;
+  width: 100%;
+  height: 80%;
+}
+
+header .main-nav .container div .cta h2 {
+  font: normal bold 17px/23px 'Open Sans', sans-serif;
+  margin-right: .3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+header .main-nav .container div .cta .icon {
+  height: 16px;
+  top: 5px;
+}
+
+header .main-nav .container div .cta .icon i.fas.fa-arrow-right {
+  padding: .14rem;
+  font-size: 115%;
+}
+
+header .main-nav .container ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+header .main-nav .container ul li a {
+  color: #f4f4f4;
+  font: normal bold 13px/16px 'Oxygen', sans-serif;
+  padding: 1rem 0;
+}
+
+header .main-nav .container ul li .logo img {
+  top: 3rem;
+  width: 300px;
+}
+
+header .main-nav .container ul .active,
+header .main-nav .container ul li:hover:not(.logo) {
+  position: relative;
+}
+
+header .main-nav .container ul .active a::after,
+header .main-nav .container ul li:hover:not(.logo) a::after {
+  position: absolute;
+  content: ' ';
+  left: 0rem;
+  top: .5rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #EDFF86;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+header section.site-banner {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+header section.site-banner h1 {
+  font: normal bold 88px/93px 'Catamaran', sans-serif;
+  color: #EDFF86;
+}
+
+header section.site-banner h2 {
+  font: normal normal 30px/35px 'Montserrat', sans-serif;
+  letter-spacing: .05em;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+main section {
+  height: 100vh !important;
+}
+
+main section.about-us {
+  background-color: #EDFF86;
+  height: 100vh;
+}
+
+main section.about-us .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 210px;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1E2019;
+}
+
+main section.about-us .logo img {
+  width: 200px;
+}
+
+main section.about-us .container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  row-gap: 0rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 2fr 20fr;
+      grid-template-rows: 2fr 20fr;
+}
+
+main section.about-us .container h1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font: normal bold 30px/39px 'PT Sans', sans-serif;
+}
+
+main section.about-us .container article.our-story {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  padding-bottom: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main section.about-us .container article.our-story h2 {
+  font: normal normal 32px/41px 'Love Ya Like A Sister', cursive;
+  padding: .7rem 0;
+}
+
+main section.about-us .container article.our-story p {
+  font: normal normal 18px/27px 'Lato', sans-serif;
+  width: 90%;
+  padding-bottom: 1rem;
+}
+
+main section.about-us .container article.our-story p:first-child {
+  padding-top: 0 !important;
+}
+
+main section.about-us .container > div {
+  padding: 1rem 0;
+}
+
+main section.about-us .container > div [class^="detail-"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.about-us .container > div [class^="detail-"] h3 {
+  padding: .5rem .7rem .7rem .7rem;
+  font: normal bold 18px/31px 'Oxygen', sans-serif;
+}
+
+main section.about-us .container > div [class^="detail-"] img {
+  display: block;
+  margin: auto;
+  width: 500px;
+}
+
+main section.about-us .container > div [class^="detail-"] div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: .5rem;
+}
+
+main section.about-us .container > div [class^="detail-"] div i {
+  font-size: 200%;
+  padding: 0 1rem;
+}
+
+main section.about-us .container > div [class^="detail-"] div p {
+  font: normal normal 18px/31px 'Oxygen', sans-serif;
+}
+
+main section.menu {
+  background-color: #1E2019;
+  color: #f4f4f4;
+  height: 99vh;
+}
+
+main section.menu .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 210px;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #EDFF86;
+}
+
+main section.menu .logo img {
+  width: 200px;
+}
+
+main section.menu .container {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 2fr 3fr 14fr;
+      grid-template-rows: 2fr 3fr 14fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.menu .container h1.section-title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+  font: normal bold 35px/45px 'PT Sans', sans-serif;
+  margin-bottom: 1rem;
+}
+
+main section.menu .container ul.list-cat {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.menu .container ul.list-cat li {
+  padding: 1rem 2.5rem;
+  font: normal bold 13px/16px 'Oxygen', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main section.menu .container ul.list-cat li.active {
+  color: #EDFF86;
+}
+
+main section.menu .container .list-menu {
+  -webkit-column-gap: 3.5rem;
+          column-gap: 3.5rem;
+  row-gap: 3rem;
+  width: 80%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main section.menu .container .list-menu .menu-item {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  display: -ms-grid;
+  display: grid;
+  gap: .5rem;
+  -ms-grid-columns: auto 8fr 6fr 1fr;
+      grid-template-columns: auto 8fr 6fr 1fr;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+main section.menu .container .list-menu .menu-item img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/ span 2;
+}
+
+main section.menu .container .list-menu .menu-item .menu-name {
+  text-transform: uppercase;
+  font: normal bold 13px/16px 'Oxygen', sans-serif;
+}
+
+main section.menu .container .list-menu .menu-item .menu-details {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  font: normal bold 13px/16px 'Oxygen', sans-serif;
+  color: #B7b7b7;
+}
+
+main section.menu .container .list-menu .menu-item .dotted {
+  border-bottom: 1px dashed #f4f4f4;
+  margin: 0 1rem;
+}
+
+main section.menu .container .list-menu .menu-item .menu-price {
+  font: normal bold 13px/16px 'Oxygen', sans-serif;
+  color: #EDFF86;
+}
+
+main section.reservations {
+  background-color: #f4f4f4;
+  color: #1E2019;
+  height: 99vh;
+}
+
+main section.reservations .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 210px;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1E2019;
+}
+
+main section.reservations .logo img {
+  width: 200px;
+}
+
+main section.reservations .container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.reservations .container h1.section-title {
+  text-align: center;
+}
+
+main section.reservations .container .container-form {
+  left: -10px;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 800px;
+  height: 370px;
+}
+
+main section.reservations .container .container-form form {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 2fr 3fr 3fr 2fr;
+      grid-template-rows: 2fr 3fr 3fr 2fr;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  row-gap: 1.5rem;
+  width: 800px;
+  margin: auto;
+  padding: 1rem 2rem;
+  padding-bottom: 2rem;
+  border: 15px solid #1E2019;
+  position: relative;
+  z-index: 100;
+}
+
+main section.reservations .container .container-form form h3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font: normal bold 25px/32px 'Oxygen', sans-serif;
+}
+
+main section.reservations .container .container-form form div {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+}
+
+main section.reservations .container .container-form form div label {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding: .5rem;
+  text-transform: uppercase;
+  font: normal 500 18px/21px 'Roboto', sans-serif;
+}
+
+main section.reservations .container .container-form form div label i {
+  font-size: 120%;
+  padding-left: 0 .5rem;
+}
+
+main section.reservations .container .container-form form div input {
+  height: 40px;
+  width: 280px;
+  border: none;
+  border: solid 1px #777;
+  border-radius: 4px;
+  display: block;
+  padding-left: .5rem;
+}
+
+main section.reservations .container .container-form form div input::-webkit-input-placeholder {
+  font: normal normal 16px/22px 'Fira Code', sans-serif;
+  text-transform: uppercase;
+}
+
+main section.reservations .container .container-form form div input:-ms-input-placeholder {
+  font: normal normal 16px/22px 'Fira Code', sans-serif;
+  text-transform: uppercase;
+}
+
+main section.reservations .container .container-form form div input::-ms-input-placeholder {
+  font: normal normal 16px/22px 'Fira Code', sans-serif;
+  text-transform: uppercase;
+}
+
+main section.reservations .container .container-form form div input::placeholder {
+  font: normal normal 16px/22px 'Fira Code', sans-serif;
+  text-transform: uppercase;
+}
+
+main section.reservations .container .container-form form .btn-submit {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+main section.reservations .container .container-form form .btn-submit input {
+  width: 181px;
+  height: 52px;
+  font: normal bold 18px/23px 'Oxygen', sans-serif;
+  background-color: #1E2019;
+  border: none;
+  color: #f4f4f4;
+  border-radius: 0px;
+}
+
+main section.reservations .container .container-form .bg-offset {
+  position: absolute;
+  height: 115%;
+  width: 103%;
+  background-color: #EDFF86;
+  z-index: 50;
+  top: -42px;
+  right: -48px;
+}
+
+footer .container {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #555;
+}
+
+footer .container .social-icons {
+  width: 222px;
+}
+
+footer .container .social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .social-icons ul li {
+  padding: 0 1rem;
+}
+
+footer .container .designer {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer .container .designer p {
+  font: normal normal 13px/16px 'Oxygen',sans-serif;
+}
+
+footer .container .designer p i {
+  color: red;
+}
+
+footer .container .designer img {
+  width: 100px;
+}
+
+footer .container .copyright p {
+  font: normal bold 12px/15px 'Oxygen', sans-serif;
+  color: #555;
+}
