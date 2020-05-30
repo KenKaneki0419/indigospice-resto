@@ -293,7 +293,7 @@ main {
                 display: flex;
 
                 li {
-                    padding: 1rem 2.5rem;
+                    margin: 1rem 2.5rem;
                     font: normal bold 13px/16px 'Oxygen', sans-serif;
                     text-transform: uppercase;
                     cursor: pointer;
@@ -307,12 +307,13 @@ main {
             }
 
             .list-menu {
+                margin-top: 1rem;
                 column-gap: 3.5rem;
                 row-gap: 3rem;
                 width: 80%;
                 grid-column: 1/ span 2;
                 justify-self: center;
-                align-self: center;
+                align-self: start;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
 

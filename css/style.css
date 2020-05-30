@@ -286,7 +286,7 @@ main section.about-us .container > div [class^="detail-"] div p {
 main section.menu {
   background-color: #1E2019;
   color: #f4f4f4;
-  height: 99vh;
+  height: 100vh;
 }
 
 main section.menu .logo {
@@ -340,7 +340,7 @@ main section.menu .container ul.list-cat {
 }
 
 main section.menu .container ul.list-cat li {
-  padding: 1rem 2.5rem;
+  margin: 1rem 2.5rem;
   font: normal bold 13px/16px 'Oxygen', sans-serif;
   text-transform: uppercase;
   cursor: pointer;
@@ -351,6 +351,7 @@ main section.menu .container ul.list-cat li.active {
 }
 
 main section.menu .container .list-menu {
+  margin-top: 1rem;
   -webkit-column-gap: 3.5rem;
           column-gap: 3.5rem;
   row-gap: 3rem;
@@ -360,8 +361,8 @@ main section.menu .container .list-menu {
   grid-column: 1/ span 2;
   -ms-grid-column-align: center;
       justify-self: center;
-  -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: start;
+      align-self: start;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
